@@ -4,15 +4,21 @@ var userClickedPattern=[];
 var isFirstClick=0;
 var level=0;
 
-if(isFirstClick==0)
-{
-    $(document).keypress(function()
-    {
-        $("#level-title").text("Level " + level);
-        nextSequence();
-        isFirstClick=1;
-    });
-}
+// if(isFirstClick==0)
+// {
+//     $(document).keypress(function()
+//     {
+//         $("#level-title").text("Level " + level);
+//         nextSequence();
+//         isFirstClick=1;
+//     });
+// }
+
+$("button").click( function(){
+    $("#level-title").text("Level " + level);
+         nextSequence();
+         isFirstClick=1;
+});
 
 $(".btn").click( function(){
     var userChosenColor=$(this).attr("id");
