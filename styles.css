@@ -1,13 +1,13 @@
 body {
   text-align: center;
-  background-color: #C7CCB9;
+  background-color: #fefae0;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
-  color: #FEF2BF;
+  color: #283618;
 }
 
 .container {
